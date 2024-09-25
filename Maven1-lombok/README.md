@@ -4,6 +4,8 @@ Este projeto cria um objeto `Pessoa` com os atributos `nome` e `idade`, utilizan
 
 ## Dependências
 
+Link da dependência: https://mvnrepository.com/artifact/org.projectlombok/lombok
+
 Adicione a seguinte dependência ao `pom.xml` para utilizar Lombok:
 
 ```xml
