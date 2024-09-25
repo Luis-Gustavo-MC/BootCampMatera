@@ -11,7 +11,7 @@ Este projeto cria um objeto `Pessoa` com os atributos `nome` e `idade`, utilizan
 - `@ToString` – Gera automaticamente o método `toString()`.
 - `@EqualsAndHashCode` – Gera automaticamente os métodos `equals()` e `hashCode()`.
 - `@Data` – Combina `@Getter`, `@Setter`, `@EqualsAndHashCode`, `@ToString` e `@RequiredArgsConstructor`.
-
+- `@Builder`  – Permite a criação de objetos usando o padrão de projeto Builder, oferecendo uma maneira mais flexível e legível para instanciar objetos complexos.
 ## Dependência
 
 Adicione a seguinte dependência ao arquivo `pom.xml`:
