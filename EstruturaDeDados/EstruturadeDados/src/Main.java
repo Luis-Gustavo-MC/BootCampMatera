@@ -8,14 +8,12 @@ public class Main {
     public static void main(String[] args) {
         //Declaração Lista
         List <Integer> numeros = new ArrayList<>();
-        
         //Adicionando numeros em uma lista
         numeros.add(1);
         numeros.add(2);
         numeros.add(3);
         numeros.add(4);
         numeros.add(5);
-
         
         //Lendo todos os números da lista
        for (Integer num : numeros) {
@@ -50,5 +48,5 @@ public class Main {
         }else{
             System.err.println("N");
         }
-    }
+
 }
