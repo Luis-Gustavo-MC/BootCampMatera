@@ -1,4 +1,4 @@
-# Sistema de Gestão de Saldo - Resumo
+# Sistema de Gestão de Saldo
 
 Este projeto em Java com Spring Boot simula um sistema de controle de saldo para um cliente, utilizando `UUID` para identificação, `BigDecimal` para manipulação precisa de valores monetários, e tratamento de exceções personalizadas.
 
