@@ -13,11 +13,10 @@ import java.math.BigDecimal;
 @Repository //Informar q a interface vai fazer consuta em banco
 public interface ContaRepository extends JpaRepository<Conta , UUID>{
     //Optional retornar um valor que pode ou nao ser nulo
-
     Optional<Conta> findByChavePix(String chavePixPagador);
     Optional<Conta> findByNumeroConta(Integer numeroConta);
-    //Arrumar Query
-    @Query("SELECT conta FROM Conta conta WHERE conta.numeroConta = :numeroConta AND conta.chavePix = :chavePix AND conta.saldo > 10")
-    Optional<Conta> findByNumeroContaAndChavePixAndSaldoMaiorQue10(@Param("numeroConta") Integer numeroConta, @Param("chavePix") String chavePix , @Param("saldo")BigDecimal saldo);
+    //Buscar numero da conta 
+    @Query("SELECT conta FROM Conta conta WHERE conta.numeroConta = :numeroConta AND conta.chavePix = :chavePix AND conta.saldo > :saldo")
+    Optional<Conta> findByNumeroContaAndChavePixAndSaldoMaiorQue10(@Param("numeroConta") Integer numeroConta, @Param("chavePix") String chavePix, @Param("saldo") BigDecimal saldo);
     
 }
